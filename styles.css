@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url("./fonts/stratosskyengweb-regular.woff");
+  
+}
+
+body {
+  font-family: "StratosSkyeng";
+  background: #004980;
+  display: flex;
+  justify-content: center;
+}
+
+.choice {
+  background: #C2F5FF;
+  border-radius: 12px;
+  width: 480px;
+  height: 459px;
+  margin-top: 158px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choice__text {
+  font-style: normal;
+  font-size: 40px;
+  color: #004980;
+  text-align: center;
+  margin-top: 52px;
+  width: 208px;
+  font-weight: 400;
+}
+
+.choice__buttons {
+  margin-top: 48px;
+  margin-bottom: 67px;
+  display: flex;
+  gap: 24px;
+}
+
+.choice__button {
+  width: 98px;
+  height: 98px;
+  font-family: "StratosSkyeng";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  align-items: center;
+  text-align: center;
+  color: #0080C1;
+  border-radius: 12px;
+  border-style: none;
+}
+
+.choice__button:hover {
+  transform: scale(1.02);
+            box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
+  
+}
+
+.choice__button_start {
+  background: #7AC100;
+  border-radius: 12px;
+  width: 246px;
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 48px;
+  color: #FFFFFF;
+  border-style: none;
+}
+.choice__button_start:hover {
+  transform: scale(1.02);
+            box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
+}
