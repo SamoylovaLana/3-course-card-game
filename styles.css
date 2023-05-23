@@ -66,7 +66,7 @@ body {
 
 .choice__button:hover {
   transform: scale(1.02);
-            box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
+  box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
   
 }
 
@@ -75,12 +75,16 @@ body {
   border-radius: 12px;
   width: 246px;
   height: 50px;
+  font-family: "StratosSkyeng";
   font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
   margin-bottom: 48px;
   color: #FFFFFF;
   border-style: none;
 }
+
 .choice__button_start:hover {
   transform: scale(1.02);
-            box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
+  box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
 }
