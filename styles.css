@@ -12,7 +12,6 @@
   font-family: "StratosSkyeng";
   src: url("./fonts/stratosskyengweb-regular.woff");
 }
-
 body {
   font-family: "StratosSkyeng";
   background: #004980;
@@ -48,6 +47,12 @@ body {
   display: flex;
   gap: 24px;
 }
+.choice__buttons input[type=radio] {
+  display: none;
+}
+.choice__buttons input[type=radio]:checked + label {
+  background: hwb(207 42% 5%/0.582);
+}
 
 .choice__button {
   width: 98px;
@@ -61,15 +66,17 @@ body {
   color: #0080C1;
   border-radius: 12px;
   border-style: none;
+  cursor: pointer;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
 }
-
 .choice__button:hover {
   transform: scale(1.02);
   box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
-  
 }
 
-.choice__button_start {
+.button {
   background: #7AC100;
   border-radius: 12px;
   width: 246px;
@@ -81,9 +88,9 @@ body {
   margin-bottom: 48px;
   color: #FFFFFF;
   border-style: none;
+  cursor: pointer;
 }
-
-.choice__button_start:hover {
+.button:hover {
   transform: scale(1.02);
   box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
-}
+}/*# sourceMappingURL=styles.css.map */

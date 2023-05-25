@@ -10,12 +10,17 @@
   <body>
     <div class="choice">
       <h2 class="choice__text center">Выбери сложность</h2>
-      <div class="choice__buttons">
-        <button class="choice__button">1</button>
-        <button class="choice__button">2</button>
-        <button class="choice__button">3</button>
-      </div>
-      <button class="choice__button_start">Старт</button>
+      <form class="choice__buttons">
+          <input id="easy"  type="radio" name="radio" value="1" >
+          <label class="choice__button" for="easy">1</label>
+
+          <input id="medium"  type="radio" name="radio" value="2">
+          <label class="choice__button" for="medium">2</label>
+          
+          <input id="hard"  type="radio" name="radio" value="3">
+          <label class="choice__button" for="hard">3</label>
+      </form>
+     <button class="button">Старт</button>
     </div>
     <script src="index.js"></script>
   </body> 
