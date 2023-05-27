@@ -65,7 +65,7 @@ function renderGame(level) {
     } else {
         appHtml = `
      <div>
-        <h2 class="text center">Сложный уровень сложности</h2>
+        <h2 class="text center">Сложный уровень</h2>
      </div>`
     }
 
