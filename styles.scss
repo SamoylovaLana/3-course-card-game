@@ -9,12 +9,12 @@
 }
   
 @font-face {
-    font-family: "StratosSkyeng";
+    font-family: StratosSkyeng;
     src: url("./fonts/stratosskyengweb-regular.woff");
 }
   
 body {
-    font-family: "StratosSkyeng";
+    font-family: StratosSkyeng;
     background: #004980;
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@ body {
 .choice__button {
     width: 98px;
     height: 98px;
-    font-family: "StratosSkyeng";
+    font-family: StratosSkyeng;
     font-weight: 400;
     font-size: 64px;
     line-height: 72px;
@@ -82,7 +82,7 @@ body {
     border-radius: 12px;
     width: 246px;
     height: 50px;
-    font-family: "StratosSkyeng";
+    font-family: StratosSkyeng;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -95,3 +95,11 @@ body {
         box-shadow: 5px 5px 20px rgba(51, 75, 151, 0.9333333333);
     }
 } 
+
+.text {
+    color: #FFFFFF;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 100px;
+}
