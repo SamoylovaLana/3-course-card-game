@@ -153,5 +153,5 @@ body {
   border-style: none;
 }
 .game__cards-item:hover {
-  animation: cards__visual 0.3s linear 0s 1 normal forwards;
+  transform: scale(1.1);
 }/*# sourceMappingURL=styles.css.map */
