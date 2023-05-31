@@ -1,9 +1,8 @@
 const appEl = document.getElementById("app");
 
-
 window.application = {
     level: null,
-  };
+};
 
 function renderApp() {
     const appHtml = `
@@ -26,48 +25,45 @@ function renderApp() {
      <button id="buttonStart" class="button">Старт</button>
   </div>`;
 
- appEl.innerHTML = appHtml;
+    appEl.innerHTML = appHtml;
 
- document.getElementById("buttonStart").addEventListener("click", () => {
-    let levelElements = document.querySelectorAll(".level");
+    document.getElementById("buttonStart").addEventListener("click", () => {
+        let levelElements = document.querySelectorAll(".level");
 
-    for (const levelElement of levelElements) {
-      if (levelElement.checked) {
-        window.application.level = levelElement.value;
-        break;
-      }
-    }
+        for (const levelElement of levelElements) {
+            if (levelElement.checked) {
+                window.application.level = levelElement.value;
+                break;
+            }
+        }
 
-    if (!window.application.level) {
-        alert("Выберете уровень сложности")
-    } else {
-        appEl.innerHTML = renderGame(window.application.level);
-    }   
- }); 
+        if (!window.application.level) {
+            alert("Выберете уровень сложности");
+        } else {
+            appEl.innerHTML = renderGame(window.application.level);
+        }
+    });
 }
 renderApp();
 
 function renderGame(level) {
-    
     let appHtml;
     if (level === "1") {
         appHtml = `
      <div >
        <h2 class="text center">Лёгкий уровень сложности</h2> 
-     </div>`
-
+     </div>`;
     } else if (level === "2") {
         appHtml = `
      <div>
         <h2 class="text center">Средний уровень сложности</h2>
-     </div>`
-
+     </div>`;
     } else {
         appHtml = `
      <div>
         <h2 class="text center">Сложный уровень</h2>
-     </div>`
+     </div>`;
     }
 
-    return appHtml
+    return appHtml;
 }
